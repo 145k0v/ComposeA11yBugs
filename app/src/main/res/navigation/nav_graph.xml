@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.composea11ybugs.screen.StartFragment"
+        android:label="StartFragment" />
+
+    <fragment
+        android:id="@+id/horizontalPagerFragment"
+        android:name="com.example.composea11ybugs.screen.HorizontalPagerFragment"
+        android:label="HorizontalPagerFragment" />
+
+</navigation>
