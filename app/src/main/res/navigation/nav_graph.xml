@@ -14,4 +14,9 @@
         android:name="com.example.composea11ybugs.screen.HorizontalPagerFragment"
         android:label="HorizontalPagerFragment" />
 
+    <fragment
+        android:id="@+id/initialFocusFragment"
+        android:name="com.example.composea11ybugs.screen.InitialFocusFragment"
+        android:label="InitialFocusFragment" />
+
 </navigation>
