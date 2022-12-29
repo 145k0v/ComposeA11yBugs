@@ -25,3 +25,10 @@ to the active tab.
 [HorizontalPagerFragment](app/src/main/java/com/example/composea11ybugs/screen/HorizontalPagerFragment.kt)
 
 https://user-images.githubusercontent.com/13486209/209683998-ae55be82-a621-4e31-a2ab-c7ca004b3061.mp4
+
+## Initial focus bug
+
+When two `Fragment`s have the same `topBar` (same back button, same text), and we go from one such `Fragment` to the other one, the TalkBack accessibility focus jumps to the middle of the content. The expected behavior is to always go to the top left corner of the new screen (to the back button) when `Fragment`s are replaced just like it works in every other case when `topBar`s have different buttons and/or texts
+[InitialFocusFragment](app/src/main/java/com/example/composea11ybugs/screen/InitialFocusFragment.kt)
+
+https://user-images.githubusercontent.com/13486209/209964845-f5e2706c-d965-4f7a-b7a9-d88965bada03.mp4
