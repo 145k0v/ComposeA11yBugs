@@ -32,3 +32,11 @@ When two `Fragment`s have the same `topBar` (same back button, same text), and w
 [InitialFocusFragment](app/src/main/java/com/example/composea11ybugs/screen/InitialFocusFragment.kt)
 
 https://user-images.githubusercontent.com/13486209/209964845-f5e2706c-d965-4f7a-b7a9-d88965bada03.mp4
+
+## WebView scroll bug
+
+When we have a `WebView` with a longer text, TalkBack does not properly scroll it as the focus goes through next paragraphs of text.
+
+In addition, when the focus reaches the last element, TalkBack reports that there are no more focusable elements on the page. It is wrong - there is a button is the `Scaffold`. If we ignore its message about no more elements and continue swiping, `WebView` starts scrolling, and once it scrolls until the end, then TalkBack suddenly picks the previously-invisible button up.
+
+https://user-images.githubusercontent.com/13486209/233626407-c51e6196-8813-4ef6-8dd8-fb75d667ae8d.mp4
