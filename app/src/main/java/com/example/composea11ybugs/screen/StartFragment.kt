@@ -4,7 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Scaffold
@@ -50,6 +54,8 @@ class StartFragment : Fragment() {
                     onClick = { navigationController.navigate(R.id.horizontalPagerFragment) })
                 Item(text = "Go to initial focus bug",
                     onClick = { findNavController().navigate(R.id.initialFocusFragment) })
+                Item(text = "Go to WebView scroll bug",
+                    onClick = { findNavController().navigate(R.id.webViewScrollFragment) })
             }
         }
     }

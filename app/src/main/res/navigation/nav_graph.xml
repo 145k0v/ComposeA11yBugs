@@ -19,4 +19,9 @@
         android:name="com.example.composea11ybugs.screen.InitialFocusFragment"
         android:label="InitialFocusFragment" />
 
+    <fragment
+        android:id="@+id/webViewScrollFragment"
+        android:name="com.example.composea11ybugs.screen.WebViewScrollFragment"
+        android:label="WebViewScrollFragment" />
+
 </navigation>
